@@ -35,6 +35,9 @@ npx server-up-ndot create myserver
 
 ## Patch Notes
 
+### 1.2.4
+- new github button
+
 ### 1.2.3
 - open code whit github
   - on this url->`https://github.com/ppccpcpcpc-byte/server-up-ndot`

