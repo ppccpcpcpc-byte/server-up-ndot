@@ -2,6 +2,10 @@
 
 Simple server generator and auto library install for Node.js.
 
+## github
+### github:
+`https://github.com/ppccpcpcpc-byte/server-up-ndot`
+
 ## Install
 
 server library install:
@@ -30,6 +34,10 @@ npx server-up-ndot create myserver
 ```
 
 ## Patch Notes
+
+### 1.2.3
+- open code whit github
+  - on this url->`https://github.com/ppccpcpcpc-byte/server-up-ndot`
 
 ### 1.2.2
 - new command `dev`
