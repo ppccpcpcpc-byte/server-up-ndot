@@ -2,6 +2,16 @@
 
 Simple server generator and auto library install for Node.js.
 
+## Compatibility
+- arm64
+  - aarc64
+    - termux
+- amd64
+  - x86
+    - x86_64
+  - linux
+  - windows
+
 ## github
 ### github:
 `https://github.com/ppccpcpcpc-byte/server-up-ndot`
@@ -35,12 +45,15 @@ npx server-up-ndot create myserver
 
 ## Patch Notes
 
+### 1.2.5
+- Specify OS and compatibility
+
 ### 1.2.4
 - new github button
 
 ### 1.2.3
 - open code whit github
-  - on this url->`https://github.com/ppccpcpcpc-byte/server-up-ndot`
+  - on this url->[github](https://github.com/ppccpcpcpc-byte/server-up-ndot)
 
 ### 1.2.2
 - new command `dev`
