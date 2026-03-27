@@ -45,6 +45,16 @@ npx server-up-ndot create myserver
 
 ## Patch Notes
 
+## 1.3.x
+
+### 1.3.0
+- add a local build(usage:)
+```bash
+npx server-up-ndot build
+```
+
+## 1.2.x
+
 ### 1.2.5
 - Specify OS and compatibility
 
@@ -78,6 +88,8 @@ npx server-up-ndot create myserver
 
 ### 1.2.0-alpha.1
 - Prevent port overlap(alhpa)
+
+## 1.1.x
 
 ### 1.1.8
 - typo correction

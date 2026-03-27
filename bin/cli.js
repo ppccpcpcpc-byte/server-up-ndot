@@ -4,6 +4,8 @@ const create = require("../lib/create");
 
 const dev = require("../lib/dev");
 
+const build = require("../lib/build");
+
 const args = process.argv.slice(2);
 
 if (args[0] === "create") {
@@ -11,6 +13,9 @@ if (args[0] === "create") {
 }
 else if (args[0] === "dev") {
   dev()
+}
+else if (args[0] === "build") {
+  build()
 } else {
   console.log("Usage:");
   console.log("server-up-ndot create <project-name>");
