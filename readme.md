@@ -47,6 +47,9 @@ npx server-up-ndot create myserver
 
 ## 1.3.x
 
+### 1.3.2
+- Typo correction
+
 ### 1.3.1
 - add a PR(github)
 

@@ -37,4 +37,4 @@
 
 ## site Guidw
 url:
-[site](httos://miro-pulgi.duckdns.org/gitpr)
+[site](https://miro-pulgi.duckdns.org/gitpr)
