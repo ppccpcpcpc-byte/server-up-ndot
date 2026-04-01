@@ -25,6 +25,20 @@ npm install server-up-ndot
 
 ## Usage
 
+note:plz your computer turn on(else do.)
+do:
+```node
+if (!computer.turn.on) {
+computer.turn.on = True
+on()
+}
+else if (EOFerror) {
+console.log("....If EOF occurs during booting, my heart is also at its end.")
+} else {
+console.log("TURN ON THE COMPUTER PLEASSSSSSSE!")
+}
+```
+
 Running the server:
 ```bash
 npx server-up-ndot dev
@@ -46,6 +60,9 @@ npx server-up-ndot create myserver
 ## Patch Notes
 
 ## 1.3.x
+
+### 1.3.3
+- Just joke readme(lmaoooooooooo)
 
 ### 1.3.2
 - Typo correction
