@@ -74,6 +74,12 @@ npx server-up-ndot create myserver
 
 ## 1.3.x
 
+### 1.3.7
+- There was a problem with the environment :( rollbacked.
+
+### 1.3.6
+~ use a CI ~
+
 ### 1.3.5
 - sicu report updated
 
