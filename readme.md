@@ -74,11 +74,11 @@ npx server-up-ndot create myserver
 
 ## 1.3.x
 
+### 1.3.8
+- add a cve code(e,g:cve-xxxx-xxxxx)
+
 ### 1.3.7
 - There was a problem with the environment :( rollbacked.
-
-### 1.3.6
-~ use a CI ~
 
 ### 1.3.5
 - sicu report updated
@@ -188,9 +188,11 @@ The focus is on high-impact issues that may lead to **Remote Code Execution (RCE
 
 **Vulnerability Types**
 - Server-Side Request Forgery (SSRF)
+  - CVE-2025-62718
 - Denial of Service (DoS)
+  - Memory Exhaustion
+    - CVE-2025-58754
 - Prototype Pollution
-- Memory Exhaustion
 - Supply Chain Attack (Backdoor / RAT)
 
 **Description**
