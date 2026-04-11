@@ -1,3 +1,13 @@
+# today sicu news
+## axios
+axios  <=1.14.0
+Severity: **critical**
+Axios has a NO_PROXY Hostname Normalization Bypass Leads to SSRF - https://github.com/advisories/GHSA-3p68-rc4w-qgx5
+Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain - https://github.com/advisories/GHSA-fvcv-3m26-pcqx
+fix available via `npm audit fix`
+
+*Pay attention to security!*
+
 # server-up-ndot
 
 Simple server generator and auto library install for Node.js.
@@ -60,6 +70,9 @@ npx server-up-ndot create myserver
 ## Patch Notes
 
 ## 1.3.x
+
+### 1.3.4
+- sicu news updated
 
 ### 1.3.3
 - Just joke readme(lmaoooooooooo)

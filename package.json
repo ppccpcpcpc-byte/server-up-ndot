@@ -1,6 +1,6 @@
 {
   "name": "server-up-ndot",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "server toolkit",
   "main": "index.js",
   "bin": {
