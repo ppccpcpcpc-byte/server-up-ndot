@@ -1,15 +1,4 @@
-# today sicu news
-## axios
-axios  <=1.14.0
-Severity: **critical**
-
-Axios has a NO_PROXY Hostname Normalization Bypass Leads to SSRF - https://github.com/advisories/GHSA-3p68-rc4w-qgx5
-
-Axios has Unrestricted Cloud Metadata Exfiltration via Header Injection Chain - https://github.com/advisories/GHSA-fvcv-3m26-pcqx
-
-fix available via `npm audit fix`
-
-*Pay attention to security!*
+[PL welcome!](https://github.com/ppccpcpcpc-byte/server-up-ndot)
 
 # server-up-ndot
 
@@ -71,6 +60,11 @@ npx server-up-ndot create myserver
 ```
 
 ## Patch Notes
+
+## 2.x.x
+
+### 2.0.0
+- server framework:express -> Fastify 
 
 ## 1.3.x
 
@@ -166,114 +160,3 @@ npx server-up-ndot build
 - Fix security issues
   - deleted package `body-parser`
 - Fix license
-
-# 🔐 Today Security Report (Critical npm Vulnerabilities)
-
-## Overview
-This document provides a concise security report of recently identified **critical vulnerabilities in widely used npm packages and Node.js environments**.  
-The focus is on high-impact issues that may lead to **Remote Code Execution (RCE), Server-Side Request Forgery (SSRF), Denial of Service (DoS), and Supply Chain Attacks**.
-
----
-
-## 🚨 Critical Findings
-
-### 1. axios (High Risk – Supply Chain + Multiple CVEs)
-
-**Affected Versions**
-- `<= 1.13.x`
-- Compromised releases: `1.14.1`, `0.30.4`
-
-**Severity**
-- 🔥 CRITICAL
-
-**Vulnerability Types**
-- Server-Side Request Forgery (SSRF)
-  - CVE-2025-62718
-- Denial of Service (DoS)
-  - Memory Exhaustion
-    - CVE-2025-58754
-- Prototype Pollution
-- Supply Chain Attack (Backdoor / RAT)
-
-**Description**
-Axios, one of the most widely used HTTP clients in Node.js, has been affected by multiple critical vulnerabilities.  
-Recent incidents include a **supply chain compromise**, where malicious code was injected into official package releases, enabling remote access (RAT) on affected systems.
-
-**Impact**
-- Remote attackers may gain system access
-- Internal network exposure via SSRF
-- Full server crash through memory exhaustion
-- Execution of malicious payloads
-
-**Recommendation**
-- Upgrade to a secure version immediately (`>= 1.13.5`)
-- Avoid compromised versions:
-  - `1.14.1`
-  - `0.30.4`
-- Lock dependencies using `package-lock.json` or `pnpm-lock.yaml`
-- Perform integrity checks on installed packages
-
----
-
-### 2. Node.js Runtime (Critical Environment Vulnerability)
-
-**Severity**
-- 🔥 CRITICAL
-
-**Vulnerability Type**
-- Stack Overflow / Denial of Service
-
-**Description**
-A vulnerability in Node.js related to `async_hooks` can be exploited to trigger a **stack overflow**, leading to application crashes.  
-Since this affects the runtime itself, all applications using vulnerable versions are at risk.
-
-**Impact**
-- Application crash (DoS)
-- Potential service-wide outage
-
-**Recommendation**
-- Update Node.js to the latest LTS version
-- Avoid unsafe usage of `async_hooks`
-- Monitor runtime-level advisories regularly
-
----
-
-### 3. form-data (Transitive Dependency Risk)
-
-**Severity**
-- 🟠 HIGH
-
-**Vulnerability Type**
-- Predictable multipart boundary
-- Request manipulation
-
-**Description**
-The `form-data` package, often used indirectly via axios, contains weaknesses in boundary generation, which may allow attackers to manipulate HTTP requests.
-
-**Impact**
-- Request tampering
-- Potential injection vectors
-
-**Recommendation**
-- Update dependencies
-- Audit indirect dependencies (`npm ls`)
-- Use secure alternatives where possible
-
----
-
-## 📊 Risk Prioritization
-
-| Priority | Component   | Risk Level | Notes                         |
-|----------|------------|-----------|------------------------------|
-| 1        | axios      | CRITICAL  | Supply chain + multiple CVEs |
-| 2        | Node.js    | CRITICAL  | Runtime-level vulnerability  |
-| 3        | form-data  | HIGH      | Transitive dependency risk   |
-
----
-
-## 🛡️ Mitigation Strategy
-
-### Immediate Actions
-```bash
-npm audit
-npm audit fix
